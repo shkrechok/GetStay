@@ -1,0 +1,45 @@
+.usertrip-preview {
+    display: flex;
+    // width: 300px;
+    height: 100px;
+    align-items: center;
+}
+
+
+.usertrip-preview img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.usertrip-preview div {
+    margin-left:1rem
+
+}
+
+
+.usertrip-preview:hover {
+    cursor: pointer;
+}
+
+.destinations{
+    text-align: start;
+}
+
+.usertrips-table {
+    width: 100%;
+}
+
+.usertrips-table tbody {
+    text-align: center;
+}
+
+.approved-green{
+    color:rgb(2, 192, 2)
+}
+
+.pending-yellow{
+    color: orange;
+}
+

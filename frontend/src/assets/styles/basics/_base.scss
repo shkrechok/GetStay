@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+::selection {
+    background-color: $clr1;
+    color: $clr6;
+}
+
+html {
+    font-family: manrope;
+    line-height: 1.6;
+    // color: $clr2;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    // font-size: rem(18px);
+    margin: 0px;
+    // max-width: 1024px;
+    max-width: 2520px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    // font-family: caveat;
+    // margin: 0 0 0.6em;
+    line-height: 1;
+}
+
+
+// section, main, footer {
+//     // padding: 5px;
+// }
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color:black
+}
+a:hover {
+    text-decoration: none;
+}
+

@@ -1,0 +1,268 @@
+// .app-header {
+//     background-color: $clr4;
+//     padding: 10px;
+
+
+//     .user-info {
+//         // background-color: $clr2;
+//         // padding: 2px 8px;
+//         padding-left: 100px;
+//         color: $clr1;
+
+//         .score {
+//             background-color: $clr2;
+//             color: $clr6;
+//             padding: 8px;
+//             margin: 10px;
+//             border-radius: 50%;
+//         }
+
+//         img {
+//             width: 32px;
+//             height: 32px;
+//             border-radius: 50%;
+//             object-fit: cover;
+//         }
+//     }
+
+//     .user-info .btn-link {
+//         color: $clr2;
+//     }
+
+//     nav {
+//         font-size: .8em;
+//         background-color: $clr5;
+//         padding: 5px;
+
+//     }
+
+//     nav a:first-child {
+//         margin-right: 30px;
+//     }
+
+//     nav a:not(:first-child) {
+//         border-top: 1px solid $clr1;
+//         padding: 0 5px;
+//         margin: 10px;
+//     }
+
+//     nav .active {
+//         color: $clr1;
+//     }
+
+// }
+.app-header-container {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $clr11;
+    background-color: $clr6;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    align-content: center;
+
+    &.narrow { 
+
+        border-bottom: none;
+        position: relative;
+            
+        .app-header {
+            grid-template-columns: minmax(40px, 1fr) minmax(auto, 2360px) minmax(40px, 1fr);
+            max-width: 1127px;
+            margin-inline: auto;
+        }
+        .filter-selection-btns{
+            .btn-guests, .btn-when{
+                display: none;
+            }
+
+            .btn-where{
+                width: 100%;
+                
+
+            }
+        }
+    }
+
+    &.high {
+        translate: 0 6rem;
+
+        .app-header {
+            border-style: none;
+        }
+
+        .icon-svg,
+        .sign-in {
+            translate: 0 -6rem;
+        }
+
+        .header-filter {
+            translate: 0 -6rem;
+        }
+    }
+}
+
+.app-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-column: 2;
+    height: 5rem;
+    z-index: 10;
+    background-color: $clr6;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $clr11;
+
+
+    .icon-svg {
+        color: $clr9;
+        font-size: 1.4rem;
+        font-weight: 600;
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        font-family: roboto bold, sans-serif;
+        line-height: 1.5;
+        font-style: Helvetica Neue;
+        text-transform: lowercase;
+
+        svg {
+            width: 32px;
+            height: 32px;
+            stroke: $clr9;
+            fill: $clr9;
+            overflow: visible;
+            stroke-width: 0.1;
+        }
+    }
+
+    .a-logo{
+        width: 120px;
+    }
+
+    .sign-in {
+        display: flex;
+        align-items: center;
+        justify-self: end;
+
+        .login-button {
+            height: 2.6rem;
+            width: 4.75rem;
+            display: flex;
+            gap: 0.3rem;
+            border-radius: 2.5rem;
+            border-color: $clr11;
+            border-style: solid;
+            border-width: 1px;
+            background-color: #fff;
+            align-items: center;
+            justify-content: space-between;
+
+            .login-btn-icon {
+                height: 1.1rem;
+                opacity: 0.5;
+            }
+
+            .usef-photo {
+                border-radius: 50%;
+                width: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+.user-photo img {
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-top: 3px;
+}
+
+
+
+// login page
+
+.login-page-p {
+    text-align: center;
+}
+
+.signup-form {
+    text-align: center;
+}
+
+.user-info img {
+    width: 15px;
+    border-radius: 50%;
+}
+
+
+
+
+
+.sign-in span {
+    margin-right: 25px;
+    font-family: roboto-regular;
+    width: 120px;
+    font-size: 0.9rem;
+    font-weight: 800;
+
+}
+
+.sign-in span:hover {
+    cursor: pointer;
+
+}
+
+.icon-svg-right {
+    fill: grey;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+
+
+
+
+.login-modal {
+    // display: none;
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    background-color: #fff;
+    width: 240px;
+    box-shadow: 0 2px 16px #0000001f;
+    border-radius: 12px;
+    padding: 8px 0;
+    margin-top: 34px;
+    font-size: 14px;
+
+    // height: 105px;
+    &.hidden {
+        display: none;
+    }
+}
+
+.login-modal li {
+    list-style: none;
+    padding: 10px 12px;
+    color: #222;
+}
+
+.login-modal hr {
+    width: 75%
+}
+
+.narrow .app-header{
+    border-bottom: none;
+}
+
+.btn-where{
+    margin-left: 10px;
+}

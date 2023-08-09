@@ -1,0 +1,15 @@
+.stay-list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-auto-flow: dense;
+    row-gap: 40px;
+    column-gap: 24px;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    li:hover{
+        cursor: pointer;
+    }
+}
+

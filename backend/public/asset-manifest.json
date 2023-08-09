@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fec3fef9.css",
+    "main.js": "/static/js/main.da82d62a.js",
+    "static/media/loader.gif": "/static/media/loader.f3b43b4d362bff616256.gif",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Bold.ttf": "/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/Manrope-Bold.ttf": "/static/media/Manrope-Bold.8847f48b30e6d876c969.ttf",
+    "static/media/Manrope-Light.ttf": "/static/media/Manrope-Light.30cd988125e4936ea227.ttf",
+    "service-worker.js": "/service-worker.js",
+    "static/media/AirbnbCereal_W_Md.ttf": "/static/media/AirbnbCereal_W_Md.81798c6cdace650a8c1a.ttf",
+    "static/media/logo.png": "/static/media/logo.8523ccdec3239a5958ad.png",
+    "static/media/flexible.jpeg": "/static/media/flexible.ea4bee9a8ae36c0e3395.jpeg",
+    "static/media/user.png": "/static/media/user.c0300d564b9075b76232.png",
+    "static/media/location.png": "/static/media/location.a405c2668c55f74c09be.png",
+    "static/media/arrow-right.png": "/static/media/arrow-right.a047fe68b104ae4adae5.png",
+    "static/media/arrow-left.png": "/static/media/arrow-left.ddcd42c4ee69e59ba95a.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/Greece.webp": "/static/media/Greece.bf6a17c846334e3873a4.webp",
+    "static/media/France.webp": "/static/media/France.b75cf05b38e6bae34c31.webp",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/Middle East.webp": "/static/media/Middle East.66e5650f59846b5842fe.webp",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/Italy.webp": "/static/media/Italy.b00d91b4b8afceaa4985.webp",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/South America.webp": "/static/media/South America.3f32b3945318eb0dbede.webp",
+    "static/media/x-symbol.svg": "/static/media/x-symbol.d191b2d703a22502e894401d78834239.svg",
+    "index.html": "/index.html",
+    "static/media/heart.svg": "/static/media/heart.6ede4275297aa4b6bea2f95686a0efe5.svg",
+    "static/media/heart filled.svg": "/static/media/heart filled.53c61c89ae83cb71eaf8c6a30dd17220.svg",
+    "static/media/signupbtn.svg": "/static/media/signupbtn.10c9aea2b362c8707c64c9e8ab026855.svg",
+    "main.fec3fef9.css.map": "/static/css/main.fec3fef9.css.map",
+    "main.da82d62a.js.map": "/static/js/main.da82d62a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fec3fef9.css",
+    "static/js/main.da82d62a.js"
+  ]
+}

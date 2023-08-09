@@ -1,0 +1,29 @@
+.user-msg {
+    // color: black; 
+    color: green;
+    /* padding: 10px; */
+    font-family: 'roboto-regular';
+    font-size: 16px;
+    position: fixed;
+    top: 47px;
+    right: 148px;
+    z-index: 1000;
+    margin: 5px;
+}
+.user-msg button {
+    position: absolute;
+    top: 4px;
+    left: 100%;
+    float: right;
+    border: 0;
+    border-radius: 90%;
+    margin: 5px;
+    background-color: white;
+    padding: 0px 0px;
+}
+
+.user-msg i {
+    color: green;
+    font-size: 25px;
+    margin-right: 5px;
+}

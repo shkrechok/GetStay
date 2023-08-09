@@ -1,0 +1,160 @@
+.stay-preview {
+    // position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.stay-preview-like {
+    position: relative;
+
+}
+
+.stay-preview-like img {
+    position: absolute;
+    width: 2rem;
+    height: 1.5rem;
+    z-index: 1;
+    top: 15px;
+    right: 10px;
+    // opacity: 0.5;
+}
+
+.preview-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    position: relative;
+}
+
+.preview-info-first {
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+
+.preview-address {
+    font-family: 'roboto-regular';
+    font-weight: 600;
+}
+
+.preview-rating {
+    display: flex;
+    justify-self: end;
+    position: absolute;
+    top: -3px;
+    letter-spacing: 0.5px;
+}
+
+.preview-rating i {
+    margin-right: 0.3em;
+    // position: absolute;
+    // right: 27px;
+    font-size: 0.7rem;
+    margin-top: 5px;
+    // top: 2px;
+}
+
+.preview-price {
+    grid-column: 1;
+    font-family: 'roboto-regular';
+    font-weight: 600;
+}
+
+.preview-date {
+    grid-column: 1;
+    color: #717171;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+}
+
+.preview-price span {
+    font-family: manrope;
+}
+
+.preview-name {
+    color: #717171;
+    font-weight: 600;
+}
+
+.react-multi-carousel-list {
+    position: sticky;
+}
+
+
+.img-preview {
+    // width: 100%;
+    border-radius: 5%;
+    aspect-ratio: 1.053/1;
+    object-fit: cover;
+}
+
+.stay-preview .react-multiple-carousel__arrow {
+
+    display: none;
+}
+
+.stay-preview:hover {
+    .react-multiple-carousel__arrow {
+        display: block
+    }
+}
+
+.react-multi-carousel-dot-list {
+    bottom: 5px
+}
+
+.react-multiple-carousel__arrow {
+
+    min-width: 25px;
+    min-height: 25px;
+    color: black;
+    background-color: white;
+}
+
+.react-multiple-carousel__arrow::before {
+    color: black;
+    background-color: white;
+    font-size: 12px;
+}
+
+.react-multiple-carousel__arrow:hover {
+    // color:red;
+    background-color: white;
+
+}
+
+.react-multi-carousel-dot button::before {
+    font-size: 12px;
+}
+
+// .react-multi-carousel-dot .react-multi-carousel-dot--active button{
+//     // background-color: white;
+//     opacity:1
+// }
+
+// .react-multi-carousel-dot{
+//     width: 5px;
+//     height: 5px;
+//     opacity: 0.6;
+// }
+
+// .react-multi-carousel-dot button{
+//     width: 7px;
+//     height: 7px;
+//     border: none;
+//     background-color: white;
+//     opacity:0.6
+// }
+
+.react-multi-carousel-dot button {
+    border: none;
+    width: 7px;
+    height: 7px;
+    opacity: 0.5
+}
+
+.react-multi-carousel-dot--active button {
+    background-color: white;
+    // border: none;
+    opacity: 1
+}

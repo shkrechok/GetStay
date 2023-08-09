@@ -1,0 +1,268 @@
+// html{
+//     background-color: $clr6;
+//     // z-index: 1;
+// }
+// body{
+//     background-color: $clr6;
+//     z-index: -1;
+// }
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+
+    // @media(max-width: 920px) {
+    //     grid-template-columns: 10px 1fr 10px;
+    // }
+
+    @include for-narrow-layout {
+        grid-template-columns: minmax(80px, 1fr) minmax(auto, 2360px) minmax(80px, 1fr);
+    }
+    &.full {
+        grid-column: 1 / -1;
+    }
+
+    &>*:not(.full) {
+        grid-column: 2;
+    }
+
+     
+}
+
+.main-content {
+    position: relative;
+
+
+
+
+    .gray-screen {
+        height: 100%;
+        width: 100vw;
+        background-color: rgb(0 0 0 / 28%);
+        z-index: -10;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .white-screen {
+        height: 100%;
+        width: 100vw;
+        background-color: $clr10;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+
+}
+
+.header-background-screen {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 7rem;
+    z-index: 2;
+    background-color: $clr6;
+
+    &.hidden {
+        height: 5rem;
+
+    }
+}
+
+
+
+// .main-container {
+//     display: grid;
+//     grid-template-columns: 20px 1fr 20px;
+
+//     > * {
+//         grid-column: 2;
+
+//         &.full {
+//             grid-column: 1 /-1;
+//         }
+//     }
+
+//     @include for-narrow-layout {
+//         grid-template-columns: 
+//             minmax(20px, 1fr)
+//             minmax(auto, $mobile-breakpoint)
+//             minmax(20px, 1fr);
+//     }
+//     @include for-normal-layout {
+//         grid-template-columns: 
+//             minmax(20px, 1fr)
+//             minmax(auto, $narrow-breakpoint)
+//             minmax(20px, 1fr);
+//     }
+//     @include for-wide-layout {
+//         grid-template-columns: 
+//             minmax(20px, 1fr)
+//             minmax(auto, $normal-breakpoint)
+//             minmax(20px, 1fr);
+//     }
+// }
+
+// .card-grid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//     grid-gap: 20px;
+// }
+
+@media (max-width: 450px) {
+
+    body {
+        .sign-in {
+            position: fixed;
+
+            span {
+                display: none;
+            }
+        }
+
+        .filter-selection-btns {
+            position: fixed;
+            top: 15px;
+            left: 116px;
+        }
+
+        .splitter {
+            display: none;
+        }
+
+        .btn-when {
+            display: none;
+        }
+
+        .btn-guests {
+            display: none;
+        }
+
+        .login-modal {
+            right: 0px;
+        }
+
+        .stay-list {
+            row-gap: 8vh;
+        }
+
+        .filter-selection-btns {
+            width: 10rem;
+            // display:none;
+        }
+
+        .swiper-slide {
+            width: 67px !important;
+
+        }
+
+        .swiper {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
+            margin-left: -1px;
+        }
+
+        .swiper-wrapper {
+            width: 100px
+        }
+
+        .label-container {
+            width: 100px;
+            justify-content: start;
+        }
+
+        .icon-svg span {
+            display: none;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 10px 1fr 10px;
+
+
+        }
+
+        .login-main form input {
+            width: 99%;
+            height: 23px;
+        }
+
+        .swiper-button-prev {
+            display: none;
+        }
+
+        .swiper-button-next {
+            display: none;
+        }
+
+        .stay-preview:hover .react-multiple-carousel__arrow {
+            display: none;
+        }
+
+        .react-multiple-carousel__arrow {
+            display: none;
+        }
+
+
+        .user-msg {
+            color: black;
+            // color: green;
+            /* padding: 10px; */
+            font-family: "roboto-regular";
+            font-size: 16px;
+            position: fixed;
+            top: 62px;
+            right: -2px;
+            z-index: 1000;
+            margin: 5px;
+            width: 200px;
+            background-color: white;
+        }
+
+        .user-msg i {
+            color: green;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .user-msg button {
+
+            position: absolute;
+            top: -19px;
+            left: 85%;
+            float: right;
+            border: 0;
+            border-radius: 90%;
+            margin: 5px;
+            background-color: white;
+            padding: 3px 7px;
+        }
+
+        .charts {
+            justify-content: start;
+        }
+
+        .charts .chart-container {
+            width: 24.1rem;
+        }
+
+        .charts .chart-container .title {
+            padding-bottom: 0;
+        }
+
+        .charts .chart-container .datacard {
+            gap: 10px;
+        }
+    }
+}

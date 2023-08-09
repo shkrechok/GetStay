@@ -1,0 +1,53 @@
+.login-main {
+    border: 1px solid #B0B0B0;
+    border-radius: 12px;
+    position: relative;
+    max-width: 568px;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    overflow: visible;
+    margin-inline: auto;
+}
+
+.login-main header {
+    padding: 0 24px;
+    min-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // font-family: cereal-bold;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ddd;
+}
+
+.login-main form {
+    padding: 32px
+}
+.login-main form input{
+    width: 100%;
+    height: 25px;
+    // border-radius: 5%;
+    // box-shadow: 0 0 0 1px
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+.login-main-label{
+    margin-bottom: 8px;
+}
+
+.login-main form button {
+    width: 100%;
+    height: 3.1em;
+    background-color: $clr1;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    background-image: radial-gradient(circle at calc((0 + var(--positionX, 0)) * 10%) calc((0 + var(--positionY, 0)) * 5%), rgb(241, 37, 75) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);
+
+}

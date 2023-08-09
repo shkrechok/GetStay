@@ -1,0 +1,133 @@
+.rdrDateRangePickerWrapper {
+    width: 100%;
+    background-color: $clr6;
+    border-radius: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .rdrDefinedRangesWrapper,
+    .rdrMonthPicker,
+    .rdrYearPicker,
+    .rdrDateDisplayWrapper {
+        display: none;
+    }
+
+    .rdrDateRangeWrapper {
+        border-radius: 2.5rem;
+    }
+
+
+    .rdrMonthAndYearWrapper {
+        height: 0;
+        padding: 0;
+
+        .rdrNextPrevButton,
+        .rdrPprevButton,
+        .rdrNextButton {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            background-color: $clr13;
+            border-radius: 50%;
+        }
+
+
+    }
+
+    .rdrMonthName {
+        // font-family: roboto bold;
+        // font-style: circular;
+        font-size: 1rem;
+        color: $clr7a;
+        text-align: center;
+    }
+
+    .rdrMonths {
+        gap: 1.5rem;
+
+        .rdrWeekDays {
+            font-family: 'roboto-regular';
+        }
+    }
+
+
+    .rdrDays {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .rdrDay {
+        height: 2.5rem;
+        width: 2rem;
+        color: $clr7a;
+        font-family: roboto bold;
+        font-style: circular;
+        font-size: 1rem;
+        background-color: $clr6;
+
+
+        .rdrStartEdge,
+        .rdrEndEdge {
+            background-color: $clr7;
+            border-radius: 50%;
+
+            ~.rdrDayNumber span {
+                color: white;
+                font-family: roboto bold;
+
+            }
+        }
+
+        &.rdrDayPassive {
+            ~.rdrDayNumber span {
+                color: $clr11;
+                font-family: roboto bold;
+                // opacity: 0.7;
+            }
+        }
+
+        .rdrInRange {
+            background-color: white;
+            border-radius: 50%;
+            font-family: 'roboto-regular';
+
+            ~.rdrDayNumber span {
+                color: $clr7a;
+
+            }
+        }
+
+    }
+
+
+}
+
+.rdrDayPassive {
+    opacity: 0;
+}
+
+.rdrDayDisabled {
+    opacity: 0.3;
+}
+
+.rdrEndEdge {
+    right: 0;
+}
+
+.rdrStartEdge {
+    left: 0;
+}
+
+.rdrDayNumber {
+    font-family: 'roboto-regular';
+}
+
+.rdrDayDisabled .rdrDayNumber span{
+    color: black;
+}
+
+
+.rdrDayToday .rdrDayNumber span:after {
+    background: white;
+}
