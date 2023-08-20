@@ -62,15 +62,29 @@ export const stayService = {
 }
 window.cs = stayService
 
+// function getPlacesQuery(searchStr) {
+//     const keywords = searchStr.split(/[\s,]+/)
+//     const searchPattern = keywords.map(word => `\\b${word}\\b`).join('.*')
+//     const regex = new RegExp(searchPattern, 'i')
+//     const places = gPlaces.filter(place => regex.test(place))
+//     // console.log('places query', places)
+//     return places
+
+
+// }
+// changed regex handling for safari 
 function getPlacesQuery(searchStr) {
-    const keywords = searchStr.split(/[\s,]+/)
-    const searchPattern = keywords.map(word => `\\b${word}\\b`).join('.*')
-    const regex = new RegExp(searchPattern, 'i')
-    const places = gPlaces.filter(place => regex.test(place))
-    // console.log('places query', places)
-    return places
-
-
+    const keywords = searchStr.split(/[\s,]+/);
+    const searchPattern = keywords.map(word => `\\b${word}\\b`).join('.*');
+    try {
+        const regex = new RegExp(searchPattern, 'i');
+        const places = gPlaces.filter(place => regex.test(place));
+        // console.log('places query', places)
+        return places;
+    } catch (error) {
+        console.error('Regular expression error:', error);
+        return [];
+    }
 }
 async function query(filterBy) {
     const filterQueryParams = getQueryParams(filterBy)
