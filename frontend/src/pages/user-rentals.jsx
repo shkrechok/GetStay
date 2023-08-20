@@ -187,9 +187,11 @@ export function UserRentals({ userStays }) {
     }
 
     // const backgroundColor = randomColor({ count: userStays.length })
-
-    if (!orders || !orders.length) return <img className="loader" src={loader} />
-
+    // TODO: remove loader when no rentals found - done, run build
+    if (!orders) return <img className="loader" src={loader} />
+    if (orders.length === 0) return (
+        <p>You have no reservations yet</p>
+    )
 
     if (orders.length > 0) return (
 
