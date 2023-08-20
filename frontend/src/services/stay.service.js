@@ -87,7 +87,7 @@ function getPlacesQuery(searchStr) {
     }
 }
 async function query(filterBy) {
-    const filterQueryParams = getQueryParams(filterBy)
+    // const filterQueryParams = getQueryParams(filterBy)
     return httpService.get(API, filterBy)
 }
 
