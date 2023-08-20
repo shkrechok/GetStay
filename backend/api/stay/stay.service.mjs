@@ -34,8 +34,11 @@ function _buildCriteria(filterBy) {
     // console.log('stay service srver', filterBy)
     if (filterBy.where) {
         const keywords = filterBy.where.split(', ')
-        const searchPattern1 = keywords[0]
-        const searchPattern2 = keywords[1]
+        // const searchPattern1 = keywords[0]
+        // const searchPattern2 = keywords[1]
+        // regex syntax change for safari
+        const searchPattern1 = new RegExp(keywords[0], 'i');
+        const searchPattern2 = new RegExp(keywords[1], 'i');
         criteria.$and = [
             {
                 $or: [

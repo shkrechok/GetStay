@@ -88,6 +88,7 @@ function getPlacesQuery(searchStr) {
 }
 async function query(filterBy) {
     // const filterQueryParams = getQueryParams(filterBy)
+    //TODO: add filterBy to query params
     return httpService.get(API, filterBy)
 }
 
